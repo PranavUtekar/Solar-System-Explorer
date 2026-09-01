@@ -1,0 +1,8 @@
+.Solar_System{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 69dvh;
+  margin: 1px;
+  border: 2px solid black;
+}
