@@ -9,7 +9,7 @@ const planetsArray = [
     size: "4,879 km diameter",
     distance: "57.9 million km from Sun",
     about: "",
-    orbitSize: 120,
+    orbitSize: 70,
     orbitSpeed: 8,
     planetSize: 20,
     rotationSpeed: 5
@@ -20,7 +20,7 @@ const planetsArray = [
     size: "12,104 km diameter",
     distance: "108.2 million km from Sun",
     about: "",
-    orbitSize: 170,
+    orbitSize: 120,
     orbitSpeed: 12,
     planetSize: 25,
     rotationSpeed: 7
@@ -31,7 +31,7 @@ const planetsArray = [
     size: "12,742 km diameter",
     distance: "149.6 million km from Sun",
     about: "",
-    orbitSize: 220,
+    orbitSize: 170,
     orbitSpeed: 16,
     planetSize: 27,
     rotationSpeed: 3
@@ -42,7 +42,7 @@ const planetsArray = [
     size: "6,779 km diameter",
     distance: "227.9 million km from Sun",
     about: "",
-    orbitSize: 270,
+    orbitSize: 220,
     orbitSpeed: 20,
     planetSize: 23,
     rotationSpeed: 4
@@ -53,7 +53,7 @@ const planetsArray = [
     size: "139,820 km diameter",
     distance: "778.5 million km from Sun",
     about: "",
-    orbitSize: 340,
+    orbitSize: 270,
     orbitSpeed: 28,
     planetSize: 55,
     rotationSpeed: 2
@@ -64,7 +64,7 @@ const planetsArray = [
     size: "116,460 km diameter",
     distance: "1.43 billion km from Sun",
     about: "",
-    orbitSize: 410,
+    orbitSize: 320,
     orbitSpeed: 36,
     planetSize: 48,
     rotationSpeed: 2
@@ -75,7 +75,7 @@ const planetsArray = [
     size: "50,724 km diameter",
     distance: "2.87 billion km from Sun",
     about: "",
-    orbitSize: 480,
+    orbitSize: 370,
     orbitSpeed: 44,
     planetSize: 38,
     rotationSpeed: 3
@@ -86,7 +86,7 @@ const planetsArray = [
     size: "49,244 km diameter",
     distance: "4.50 billion km from Sun",
     about: "",
-    orbitSize: 550,
+    orbitSize: 420,
     orbitSpeed: 52,
     planetSize: 37,
     rotationSpeed: 3
@@ -97,7 +97,7 @@ const planetsArray = [
     size: "2,377 km diameter",
     distance: "5.91 billion km from Sun",
     about: "",
-    orbitSize: 620,
+    orbitSize: 470,
     orbitSpeed: 60,
     planetSize: 18,
     rotationSpeed: 5

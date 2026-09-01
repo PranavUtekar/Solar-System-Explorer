@@ -1,16 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
 }
 
-
-.App{
+.App {
   height: 100%;
 }
 
-.home_bar{
+.home_bar {
   display: flex;
   border: 2px solid black;
   padding: 1px;
@@ -20,10 +19,17 @@
   height: 10dvh;
 }
 
-#feature_buttons{
+#main_body {
+  height: 69dvh;
+}
+
+#feature_buttons {
   display: flex;
-  height:20dvh;
+  height: 20dvh;
   border: 2px solid black;
   margin: 1px;
   align-items: center;
+}
+#main_body{
+  background-color: black;
 }

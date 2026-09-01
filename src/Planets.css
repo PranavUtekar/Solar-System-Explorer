@@ -1,8 +1,64 @@
-.Solar_System{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.Solar_System {
+  position: relative;
   height: 69dvh;
   margin: 1px;
   border: 2px solid black;
+  overflow: hidden;
+}
+
+.StillSun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.OrbitContainer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+[class$="Orbit"] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.PlanetMovement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  animation-name: orbit;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.PlanetMovement p {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
