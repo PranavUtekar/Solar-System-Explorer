@@ -1,43 +1,63 @@
 .Solar_System {
   position: relative;
-  height: 69dvh;
-  margin: 1px;
-  border: 2px solid black;
+
+  width: 100%;
+  height: 100%;
+
   overflow: hidden;
 }
 
-.StillSun {
+.OuterOrbitArea {
   position: absolute;
+
+  width: 470px;
+  height: 470px;
+
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
-  z-index: 10;
+
+  border: 1px solid transparent;
+  border-radius: 50%;
+
+  z-index: 20;
 }
 
-.OrbitContainer{
+.OrbitContainer {
   position: absolute;
+
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
 }
 
 [class$="Orbit"] {
   position: absolute;
+
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
 
   border: 1px solid white;
   border-radius: 50%;
+
+  pointer-events: none;
 }
 
 .PlanetMovement {
   position: absolute;
+
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
+
+  pointer-events: none;
 
   animation-name: orbit;
   animation-timing-function: linear;
@@ -46,10 +66,35 @@
 
 .PlanetMovement p {
   position: absolute;
+
   top: 0;
   left: 50%;
 
+  margin: 0;
+
   transform: translate(-50%, -50%);
+
+  pointer-events: auto;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.StillSun {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 30;
+
+  pointer-events: none;
+}
+
+.Sun {
   margin: 0;
 }
 
@@ -61,4 +106,57 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Modal {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 400px;
+
+  padding: 20px;
+
+  background-color: white;
+
+  color: black;
+
+  border-radius: 10px;
+
+  z-index: 1000;
+}
+
+.Card {
+  position: relative;
+
+  padding: 20px;
+}
+
+.Card h2 {
+  margin-bottom: 15px;
+}
+
+.Card p {
+  margin-bottom: 10px;
+}
+
+.CloseButton {
+  position: absolute;
+
+  top: 10px;
+  right: 10px;
+
+  padding: 5px 10px;
+
+  background-color: black;
+  color: white;
+
+  cursor: pointer;
+}
+
+.CloseButton:hover {
+  background-color: crimson;
 }
